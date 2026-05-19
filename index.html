@@ -5,6 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Victoria Barbers, Hove. Ali and the team at 17 Victoria Terrace. Haircuts from £15, 5-star Google rated. Call 07878 921132 to book.">
 <title>Victoria Barbers | Hove</title>
+
+<!-- Canonical -->
+<link rel="canonical" href="https://victoriabarbers.netlify.app/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Victoria Barbers | Hove">
+<meta property="og:description" content="Ali and the team at 17 Victoria Terrace. Haircuts from £15. 5-star Google rated.">
+<meta property="og:image" content="https://victoriabarbers.netlify.app/images/shop-interior.jpg">
+<meta property="og:image:alt" content="Victoria Barbers interior — warm lighting and gold chairs">
+<meta property="og:url" content="https://victoriabarbers.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Victoria Barbers">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Victoria Barbers | Hove">
+<meta name="twitter:description" content="Ali and the team at 17 Victoria Terrace. Haircuts from £15. 5-star Google rated.">
+<meta name="twitter:image" content="https://victoriabarbers.netlify.app/images/shop-interior.jpg">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "Victoria Barbers",
+  "image": "https://victoriabarbers.netlify.app/images/shop-interior.jpg",
+  "@id": "https://victoriabarbers.netlify.app/#barbershop",
+  "url": "https://victoriabarbers.netlify.app/",
+  "telephone": "+447878921132",
+  "priceRange": "££",
+  "currenciesAccepted": "GBP",
+  "paymentAccepted": "Cash, Card",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "17 Victoria Terrace",
+    "addressLocality": "Hove",
+    "addressRegion": "East Sussex",
+    "postalCode": "BN3 2WB",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.8250687,
+    "longitude": -0.1765232
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "10:00",
+      "closes": "17:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "143",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "hasMap": "https://www.google.com/maps/place/Victoria+Barbers/@50.8250687,-0.1940327,15z/",
+  "areaServed": {
+    "@type": "City",
+    "name": "Hove"
+  }
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Syne:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 /* ─── RESET ─── */
@@ -499,6 +573,12 @@ footer{
 @keyframes chUp{to{transform:translateY(0);}}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
 
+/* ─── ACCESSIBILITY ─── */
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+
 /* ─── REVEALS ─── */
 .rev{opacity:0;transform:translateY(28px);transition:opacity .75s var(--ease-out),transform .75s var(--ease-out);}
 .rev.in{opacity:1;transform:none;}
@@ -667,6 +747,7 @@ footer{
 
 <!-- ── REVIEWS ── -->
 <section id="reviews">
+  <h2 class="sr-only">Customer Reviews of Victoria Barbers Hove</h2>
   <div class="rev-ghost" aria-hidden="true">5 STARS</div>
 
   <div class="rev-meta rev">
