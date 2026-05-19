@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Victoria Barbers in Hove — premier gentlemen's barbering at 17 Victoria Terrace. Haircuts from £15. 5-star Google rated. Call 07878 921132 to book.">
-<title>Victoria Barbers — Hove</title>
+<meta name="description" content="Victoria Barbers, Hove. Ali and the team at 17 Victoria Terrace. Haircuts from £15, 5-star Google rated. Call 07878 921132 to book.">
+<title>Victoria Barbers | Hove</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Syne:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 /* ─── RESET ─── */
@@ -397,35 +397,45 @@ nav.scrolled{
 }
 
 /* ─── HOURS + CONTACT ─── */
-#hours{
-  background:var(--base);
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  padding:100px 56px;
+#hours{background:var(--base);}
+.find-us{
+  padding:100px 56px 56px;
+  max-width:1400px;margin:0 auto;
 }
-.hours-inner{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:100px;align-items:start;
-  max-width:1400px;margin:0 auto;width:100%;
+.find-us-details{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border-top:1px solid var(--gold-border);
+  border-bottom:1px solid var(--gold-border);
+  margin:48px 0;
 }
-.hours-table{margin-top:48px;}
-.h-row{
-  display:flex;justify-content:space-between;align-items:baseline;
-  padding:20px 0;border-bottom:1px solid var(--gold-border);
+.find-us-contact-item{padding:28px 40px 28px 0;}
+.find-us-contact-item + .find-us-contact-item{
+  padding-left:40px;border-left:1px solid var(--gold-border);
 }
-.h-row:first-child{border-top:1px solid var(--gold-border);}
-.h-day{font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,2.5vw,32px);letter-spacing:.04em;}
-.h-time{font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,2.5vw,32px);color:var(--gold);}
-.h-note{
-  margin-top:28px;display:flex;align-items:center;gap:12px;
+.map-embed{
+  width:100%;height:420px;border:1px solid var(--gold-border);
+  display:block;filter:grayscale(15%);
+}
+.hours-strip{
+  background:var(--base-2);
+  border-top:1px solid var(--gold-border);
+  padding:28px 56px;
+  display:flex;align-items:center;justify-content:center;
+  gap:40px;flex-wrap:wrap;
+}
+.hs-item{display:flex;align-items:baseline;gap:12px;}
+.hs-day{font-family:'Bebas Neue',sans-serif;font-size:clamp(16px,1.8vw,24px);letter-spacing:.04em;color:var(--cream);}
+.hs-time{font-family:'Bebas Neue',sans-serif;font-size:clamp(16px,1.8vw,24px);letter-spacing:.04em;color:var(--gold);}
+.hs-sep{width:1px;height:20px;background:var(--gold-border);align-self:center;}
+.hs-note{
   font-size:10px;font-weight:500;letter-spacing:.28em;
   text-transform:uppercase;color:var(--cream-dim);
+  display:flex;align-items:center;gap:10px;
 }
 .h-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
 .c-l{
   font-size:9px;font-weight:500;letter-spacing:.32em;
-  text-transform:uppercase;color:var(--cream-dim);margin-bottom:6px;
+  text-transform:uppercase;color:var(--cream-dim);margin-bottom:6px;display:block;
 }
 .phone-link{color:inherit;text-decoration:none;transition:color .3s;}
 .phone-link:hover{color:var(--gold);}
@@ -523,8 +533,13 @@ footer{
   .rev-card{border-right:none;border-bottom:1px solid var(--gold-border);}
   .rev-card:last-child{border-bottom:none;}
 
-  #hours{padding:80px 28px;min-height:auto;}
-  .hours-inner{grid-template-columns:1fr;gap:64px;}
+  .find-us{padding:80px 28px 48px;}
+  .find-us-details{grid-template-columns:1fr;}
+  .find-us-contact-item{padding:20px 0;}
+  .find-us-contact-item + .find-us-contact-item{padding-left:0;border-left:none;border-top:1px solid var(--gold-border);}
+  .map-embed{height:300px;}
+  .hours-strip{padding:24px 28px;gap:20px;}
+  .hs-sep{display:none;}
 
   footer{padding:60px 28px 40px;}
   .foot-bottom{justify-content:center;text-align:center;}
@@ -661,7 +676,7 @@ footer{
   </div>
 
   <div class="pull-quote rev d1">
-    <span class="qm">"</span>Always super friendly and welcoming — a great cut at an honest price.<span class="qm">"</span>
+    <span class="qm">"</span>An absolute joy getting my skinfade here.<span class="qm">"</span>
   </div>
   <div class="pull-attr rev d2">— Henry Gunter &nbsp;·&nbsp; Google Review</div>
 
@@ -816,45 +831,52 @@ footer{
   </div>
 </section>
 
-<!-- ── HOURS + CONTACT ── -->
+<!-- ── FIND US + HOURS ── -->
 <section id="hours">
-  <div class="hours-inner">
-    <div>
-      <span class="s-label rev">— When to Visit</span>
-      <h2 class="s-title rev d1">OPENING<br>HOURS</h2>
-      <div class="hours-table">
-        <div class="h-row rev d2">
-          <span class="h-day">Monday – Saturday</span>
-          <span class="h-time">9am – 7pm</span>
-        </div>
-        <div class="h-row rev d3">
-          <span class="h-day">Sunday</span>
-          <span class="h-time">10am – 5pm</span>
-        </div>
+  <div class="find-us">
+    <span class="s-label rev">— Get in Touch</span>
+    <h2 class="s-title rev d1">FIND<br>US</h2>
+    <div class="find-us-details">
+      <div class="find-us-contact-item rev d1">
+        <span class="c-l">Address</span>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,2.2vw,28px);letter-spacing:.04em;line-height:1.3;margin-top:8px;">17 Victoria Terrace,<br>Hove BN3 2WB</div>
       </div>
-      <div class="h-note rev d4">
-        <div class="h-dot"></div>
-        Call ahead to guarantee your slot
+      <div class="find-us-contact-item rev d2">
+        <span class="c-l">Phone</span>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,2.5vw,32px);letter-spacing:.04em;margin-top:8px;"><a href="tel:07878921132" class="phone-link">07878 921132</a></div>
+      </div>
+      <div class="find-us-contact-item rev d3">
+        <span class="c-l">Booking</span>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(16px,1.9vw,26px);letter-spacing:.04em;line-height:1.3;margin-top:8px;">Call us to book your slot</div>
       </div>
     </div>
-    <div>
-      <span class="s-label rev">— Get in Touch</span>
-      <h2 class="s-title rev d1">FIND<br>US</h2>
-      <div class="hours-table">
-        <div class="h-row rev d2" style="flex-direction:column;align-items:flex-start;gap:4px;padding:22px 0;">
-          <span class="c-l" style="margin-bottom:4px;">Address</span>
-          <span class="h-day" style="font-size:clamp(18px,2.2vw,28px);line-height:1.25;">17 Victoria Terrace,<br>Hove BN3 2WB</span>
-        </div>
-        <div class="h-row rev d3" style="flex-direction:column;align-items:flex-start;gap:4px;padding:22px 0;">
-          <span class="c-l" style="margin-bottom:4px;">Phone</span>
-          <span class="h-day" style="font-size:clamp(20px,2.5vw,32px);"><a href="tel:07878921132" class="phone-link">07878 921132</a></span>
-        </div>
-        <div class="h-row rev d4" style="flex-direction:column;align-items:flex-start;gap:4px;padding:22px 0;">
-          <span class="c-l" style="margin-bottom:4px;">Booking</span>
-          <span class="h-day" style="font-size:clamp(16px,1.9vw,26px);line-height:1.25;">Call us to book your slot</span>
-        </div>
-      </div>
-      <a href="https://www.google.com/maps/place/Victoria+Barbers/@50.8250687,-0.1940327,15z/data=!4m15!1m7!3m6!1s0x4875850002c5c0dd:0x340f8e729de0ba1b!2sVictoria+Barbers!8m2!3d50.8250687!4d-0.1765232!16s%2Fg%2F11lct0j1_4!3m6!1s0x4875850002c5c0dd:0x340f8e729de0ba1b!8m2!3d50.8250687!4d-0.1765232!15sChB2aWN0b3JpYSBiYXJiZXJzWhIiEHZpY3RvcmlhIGJhcmJlcnOSAQtiYXJiZXJfc2hvcJoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQydGtNVlV6V1RSVE1XaFhZak5aTTB4WWNHRmFWemx3WVVWb2JGSkZSUkFC4AEA-gEECAAQSg!16s%2Fg%2F11lct0j1_4?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="map-cta rev d4">Open in Google Maps ↗</a>
+    <iframe
+      class="map-embed rev"
+      src="https://maps.google.com/maps?q=50.8250687,-0.1765232&z=16&output=embed"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Victoria Barbers location on Google Maps">
+    </iframe>
+    <div class="rev" style="margin-top:24px;">
+      <a href="https://www.google.com/maps/place/Victoria+Barbers/@50.8250687,-0.1940327,15z/data=!4m15!1m7!3m6!1s0x4875850002c5c0dd:0x340f8e729de0ba1b!2sVictoria+Barbers!8m2!3d50.8250687!4d-0.1765232!16s%2Fg%2F11lct0j1_4!3m6!1s0x4875850002c5c0dd:0x340f8e729de0ba1b!8m2!3d50.8250687!4d-0.1765232!15sChB2aWN0b3JpYSBiYXJiZXJzWhIiEHZpY3RvcmlhIGJhcmJlcnOSAQtiYXJiZXJfc2hvcJoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQydGtNVlV6V1RSVE1XaFhZak5aTTB4WWNHRmFWemx3WVVWb2JGSkZSUkFC4AEA-gEECAAQSg!16s%2Fg%2F11lct0j1_4?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="map-cta">Open in Google Maps ↗</a>
+    </div>
+  </div>
+
+  <div class="hours-strip">
+    <div class="hs-item">
+      <span class="hs-day">Mon – Sat</span>
+      <span class="hs-time">9am – 7pm</span>
+    </div>
+    <div class="hs-sep"></div>
+    <div class="hs-item">
+      <span class="hs-day">Sunday</span>
+      <span class="hs-time">10am – 5pm</span>
+    </div>
+    <div class="hs-sep"></div>
+    <div class="hs-note">
+      <div class="h-dot"></div>
+      Call ahead to guarantee your slot
     </div>
   </div>
 </section>
